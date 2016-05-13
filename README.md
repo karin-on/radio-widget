@@ -4,7 +4,7 @@ Hey there!
 
 Thanks for joining recruitment for Junior Front-end dev @ netguru. We’ve a small task for you!
 
-![Preview](https://raw.githubusercontent.com/netguru/junior-frontend-recruitment-task/master/sources/preview.png)
+![Preview](https://raw.githubusercontent.com/netguru/junior-frontend-recruitment-task/master/imgs/preview.png)
 
 This is simple Radio widget (you can find PSD from [Alexander Zaytsev](https://dribbble.com/anwaltzzz) in [psds](https://github.com/netguru/junior-frontend-recruitment-task/tree/master/psds) directory). Can you make this stuff work?
 
