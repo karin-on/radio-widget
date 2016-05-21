@@ -14,9 +14,9 @@ Use [CodePen](http://codepen.io/) as playground (create an account and create ne
 
 ### Rules & hints
 1. We love Sass, ES6, HAML. Using CSS prepprocessor (Sass with SCSS syntax strongly preffered) is a must, the rest is nice to have. CoffeeScript is welcome as well.
-2. Widget is mostly static - selecting station is the only action available. After selecting station it shouldd toggle it and display its name at the bottom of the widget.
+2. Widget is mostly static - selecting station is the only action available. After selecting station it should toggle it and display its name at the bottom of the widget.
 3. Rest of the buttons should be clickable but it should trigger no action.
-4. Pay attention to code quality, formating, conventions etc.
+4. Pay attention to code quality, formatting, conventions etc.
 5. You can find cropped images in images directory, but you don't have to use all of them (CSS power!).
 6. Remember about users with retina screens.
 
