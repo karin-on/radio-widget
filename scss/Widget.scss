@@ -4,12 +4,15 @@
 .widget {
   width: 640px;
   min-height: 1008px;
-  background: white;
+  background: $color-body-bg;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 43px;
   overflow: hidden;
+  -webkit-box-shadow: 0 53px 94px -40px rgba(0,0,0,1);
+  -moz-box-shadow: 0 53px 94px -40px rgba(0,0,0,1);
+  box-shadow: 0 53px 94px -40px rgba(0,0,0,1);
 }
 
