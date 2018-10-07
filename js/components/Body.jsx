@@ -1,54 +1,40 @@
 import React from 'react';
 
-const stations = [
-    {
-        name: "Putin FM",
-        freq: "66,6"
-    },
-    {
-        name: "Dribbble FM",
-        freq: "101,2"
-    },
-    {
-        name: "Doge FM",
-        freq: "99,4"
-    },
-    {
-        name: "Ballads FM",
-        freq: "87,1"
-    },
-    {
-        name: "Maximum FM",
-        freq: "142,2"
-    }
-];
-
+import stations from '../../data/stations.js';
 
 
 class Body extends React.Component {
     constructor(props) {
         super(props);
         this.state={
-            chosenStation: -1,
+            currStation: -1,
             isStationActive: false
         }
     }
 
     handleClick = (e, i) => {
-        this.setState({
-            chosenStation: i,
-            isStationActive: !this.state.isStationActive
-        });
 
-        if (typeof this.props.printActiveStation === 'function') {
-            this.props.printActiveStation(i, !this.state.isStationActive);
+        if (i === this.state.currStation) {
+            this.setState({
+                currStation: i,
+                isStationActive: !this.state.isStationActive
+            });
+            if (typeof this.props.printActiveStation === 'function') {
+                this.props.printActiveStation(i, !this.state.isStationActive);
+            }
+        } else {
+            this.setState({
+                currStation: i,
+                isStationActive: true
+            });
+            if (typeof this.props.printActiveStation === 'function') {
+                this.props.printActiveStation(i, true);
+            }
         }
-
     };
 
 
     render() {
-        let activePanel = this.state.chosenStation;
         let panelClass = this.state.isStationActive ?
                         'list-item__control-panel --active':
                         'list-item__control-panel';
@@ -56,7 +42,7 @@ class Body extends React.Component {
 
         let stationList = stations.map((el, i) => {
             return <li className="station-list__item" key={i}>
-                <div className={this.state.chosenStation === i ?
+                <div className={this.state.currStation === i ?
                                 panelClass :
                                 'list-item__control-panel'}>
                     <button className="control-panel__minus-btn"></button>

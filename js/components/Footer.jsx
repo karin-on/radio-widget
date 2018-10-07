@@ -5,8 +5,10 @@ import {CurrentStation} from "./CurrentStation.jsx";
 class Footer extends React.Component {
     render() {
         return <div className="widget__footer">
-            <CurrentStation chosenStation={this.props.chosenStation}
-                            isStationActive={this.props.isStationActive}/>
+            {this.props.isStationActive ?
+                <CurrentStation currStation={this.props.currStation}
+                                isStationActive={this.props.isStationActive}/> :
+                null}
         </div>
     }
 }

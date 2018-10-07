@@ -9,15 +9,14 @@ class Widget extends React.Component {
     constructor(props) {
         super(props);
         this.state={
-            chosenStation: -1,
+            currStation: -1,
             isStationActive: false
         }
     }
 
-
     printActiveStation = (i, isActive) => {
         this.setState({
-            chosenStation: i,
+            currStation: i,
             isStationActive: isActive
         });
     };
@@ -26,7 +25,7 @@ class Widget extends React.Component {
         return <div className="widget">
             <Header />
             <Body printActiveStation={this.printActiveStation}/>
-            <Footer chosenStation={this.state.chosenStation}
+            <Footer currStation={this.state.currStation}
                     isStationActive={this.state.isStationActive}/>
         </div>
     }

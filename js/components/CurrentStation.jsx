@@ -1,21 +1,19 @@
 import React from 'react';
 
+import stations from '../../data/stations.js';
+
 
 class CurrentStation extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            currStationName: ''
-        }
     }
 
     render() {
-        // console.log(this.props.chosenStation);
-        // console.log(this.props.isStationActive);
+        let currStationName = stations[this.props.currStation].name;
 
-        return <div className="current-station hidden">
+        return <div className="current-station">
             <h4 className="current-station__title">Currently playing</h4>
-            <span className="current-station__name">Dribbble FM</span>
+            <span className="current-station__name">{currStationName}</span>
         </div>
     }
 }
