@@ -1,0 +1,26 @@
+.page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 830px;
+  min-height: 1198px;
+  background: black;
+  position: relative;
+}
+
+.widget {
+  width: 640px;
+  min-height: 1008px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 43px;
+  overflow: hidden;
+}

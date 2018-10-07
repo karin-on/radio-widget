@@ -1,0 +1,18 @@
+@import "variables";
+
+
+.current-station {
+  font-family: $font-family;
+  text-align: center;
+}
+
+.current-station__title {
+  color: $color-header-bg;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+
+.current-station__name {
+  color: $color-list-font;
+  font-size: 42px;
+}
