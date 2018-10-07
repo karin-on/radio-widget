@@ -35,9 +35,6 @@ class Body extends React.Component {
     }
 
     handleClick = (e, i) => {
-        // console.log(e.target);
-        // console.log(i);
-
         this.setState({
             chosenStation: i,
             isStationActive: !this.state.isStationActive
@@ -51,8 +48,6 @@ class Body extends React.Component {
 
 
     render() {
-        // console.log(this.state.chosenStation);
-
         let activePanel = this.state.chosenStation;
         let panelClass = this.state.isStationActive ?
                         'list-item__control-panel --active':
