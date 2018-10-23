@@ -44,7 +44,7 @@ Widget is mostly static - selecting station is the only action available. After 
 
 ## Demo
 
-#### [Radio widget](https://karin-on.github.io/radio-widget/)
+### [Radio widget](https://karin-on.github.io/radio-widget/)
 
 
 
