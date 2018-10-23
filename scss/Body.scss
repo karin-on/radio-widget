@@ -3,13 +3,13 @@
 
 .widget__body {
   width: 100%;
-  height: 688px;
+  height: 344px;
   background: $color-body-bg;
   position: absolute;
-  top: 160px;
+  top: 80px;
   right: 0;
-  padding: 0 40px;
-  padding-top: 30px;
+  padding: 0 20px;
+  padding-top: 15px;
   overflow: auto;       //scroll
 }
 
@@ -27,37 +27,37 @@
 }
 
 .--active {
-  height: 345px;
+  height: 172px;  //345
 }
 
 .control-panel__minus-btn,
 .control-panel__plus-btn {
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   cursor: pointer;
   background: transparent;
   border: none;
 }
 
 .control-panel__minus-btn {
-  background-image: url("../images/minus.png");
+  background-image: url("../images/minus-sm.png");
 }
 
 .control-panel__plus-btn {
-  background-image: url("../images/plus.png");
+  background-image: url("../images/plus-sm.png");
 }
 
 .control-panel__img {
   display: block;
-  width: 288px;
-  height: 288px;
+  width: 144px;
+  height: 144px;
   border-radius: 50%;
-  border: 4px solid $color-list-font;
+  border: 2px solid $color-list-font;
   background-image: url("../images/bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -65,14 +65,15 @@
 }
 
 .list-item__head {
-  height: 120px;
+  height: 60px;
   color: $color-list-font;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: $font-family;
-  font-size: 42px;
-  border-bottom: 2px solid #43434e;
+  font-size: 21px;
+  border-bottom: 1px solid #43434e;
+  cursor: pointer;
 }
 
 .station-list__item {

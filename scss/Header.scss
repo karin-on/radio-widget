@@ -3,7 +3,7 @@
 
 .widget__header {
   width: 100%;
-  height: 160px;
+  height: 80px;
   position: absolute;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   text-transform: uppercase;
   color: $color-header-font;
   font-family: $font-family;
-  font-size: 42px;
+  font-size: 21px;
   text-align: center;
   font-weight: 600;
 }
@@ -26,7 +26,7 @@
 .header__switch-btn {
   border: none;
   background: transparent;
-  width: 114px;
+  width: 57px;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -36,10 +36,10 @@
 
 .header__back-btn {
   background-image: url("../images/back-arrow.png");
-  background-size: 28px 48px;
+  background-size: 14px 24px;
 }
 
 .header__switch-btn {
   background-image: url("../images/switch.png");
-  background-size: 44px 52px;
+  background-size: 22px 26px;
 }
