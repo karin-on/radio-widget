@@ -4,6 +4,14 @@ Hey there! This is work in progress :)
 
 
 
-![Preview](https://raw.githubusercontent.com/netguru/junior-frontend-recruitment-task/master/imgs/preview.png)
+
+
+![Preview](./images/radio-widget_prev1.png)![Preview](./images/radio-widget_prev2.png)
+
+
+
+
+
+
 
 
